@@ -8,8 +8,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        body {}
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
 
+        .links {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            text-align: center;
+        }
         ul {
             list-style-type: none;
             margin: 0;
@@ -35,7 +45,6 @@
         }
 
         h1 {
-
             font-family: "Copperplate", Times, fantasy;
             letter-spacing: 6px;
             color: rgba(10, 45, 151, 0.7);
@@ -58,41 +67,15 @@
             font-family: "Lucida Console", Times, Monospace;
             color: black;
             text-align: center;
-
         }
 
-        .wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr;
-            text-align: center;
-            justify-content: space-evenly;
-        }
-
-        .wrapper文字介紹 {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            justify-content: space-evenly;
+        .photo {
+            display: flex;
+            flex-direction: column;
         }
 
         .wrapper div {
             border: solid 1px;
-        }
-
-        .pagination a {
-            transition: background-color .3s;
-        }
-
-        .links {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr;
-            text-align: center;
-        }
-
-        p.one {
-            word-spacing: 60px;
         }
     </style>
 </head>
@@ -105,7 +88,6 @@
             <div>
                 <ul>
                     <div class="links">
-
                         <li>
                             <h3><a href="#">首頁</a></h3>
                         </li>
@@ -113,52 +95,43 @@
                             <h3><a href="#">團體區</a></h3>
                         </li>
                         <li>
-                            <h3><a href="#" >專輯區</a></h3>
+                            <h3><a href="#">專輯區</a></h3>
                         </li>
                         <li>
                             <h3><a href="#">個人區</a></h3>
                         </li>
+                    </div>
                 </ul>
+            </div>
+            <h3>傑尼龜傑尼</h3>
+        </div>
+        <div class="wrapper">
+            <div class="photo">
+                <img src="./imgs/Happy貓咪gif.gif">
+                <h3> happy貓咪 2024/11/31</h3>
+            </div>
+            <div class="photo">
+                <img src="imgs/開車貓咪.gif">
+                <h3> 開車貓咪 2024/11/31</h3>
+            </div>
+            <div class="photo">
+                <img src="imgs/咪咪喵喵.jfif">
+                <h3> 緝盜咪咪喵喵2024/11/31</h3>
+            </div>
+            <div class="photo">
+                <img src="imgs/喀拉喀拉貓咪.gif">
+                <h3> 吃飯貓咪 2024/11/31</h3>
+            </div>
+            <div class="photo">
+                <img src="imgs/可以這很喵.jfif">
+                <h3> 可以,這很喵 2024/11/31</h3>
+            </div>
+            <div class="photo">
+                <img src="imgs/HUN貓咪.gif">
+                <h3> 蛤?2024/11/31</h3>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div>
-            <div clsss="wrapper文字介紹">
-                <h3>傑尼龜傑尼</h3>
-            </div>
-            <div>
-                <div class="wrapper">
-                    <img src="./imgs/Happy貓咪gif.gif">
-                    <img src="imgs/開車貓咪.gif">
-                    <img src="imgs/咪咪喵喵.jfif">
-                </div>
-                <div class="wrapper文字介紹">
-                    <h3> happy貓咪 2024/11/31</h3>
-                    <h3> 開車貓咪 2024/11/31</h3>
-                    <h3> 緝盜咪咪喵喵2024/11/31</h3>
-                </div>
-                <div class="wrapper">
-                    <img src="imgs/喀拉喀拉貓咪.gif">
-                    <img src="imgs/可以這很喵.jfif">
-                    <img src="imgs/HUN貓咪.gif">
-                </div>
-                <div class="wrapper文字介紹">
-                    <h3> 吃飯貓咪 2024/11/31</h3>
-                    <h3> 可以,這很喵 2024/11/31</h3>
-                    <h3> 蛤?2024/11/31</h3>
-                </div>
-
-                <div>
-                    <img src="">
-                    <img src="">
-                    <img src="">
-                    <img src="">
-                    <img src="">
-                    <img src="">
-                </div>
-            </div>
-        </div>
 </body>
 
 </html>
