@@ -15,9 +15,8 @@
         }
 
         .links {
-            display: grid;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            grid-template-columns: 1fr;
+            display: flex;
+            flex-direction: row;
             text-align: center;
         }
 
@@ -31,6 +30,7 @@
 
         li {
             float: left;
+            flex: 1; /*每一個 list item 都擁有一個固定比例1 也就是平分*/
         }
 
         li a {
@@ -108,12 +108,12 @@
             color: black;
             text-align: center;
         }
-        
-        h4{
+
+        h4 {
             font-family: "Lucida Console", Times, Monospace;
             color: rgba(255, 255, 255, 0.644);
         }
-  
+
         .wrapper div {
             border: solid 1px;
         }
@@ -126,14 +126,14 @@
         .photo img {
             object-fit: contain;
         }
-      
-       .video {
-        max-width: 100%;
-        height: auto;
-       }
-       
 
-        .footer{
+        .video {
+            max-width: 100%;
+            height: auto;
+        }
+
+
+        .footer {
             background-color: #333;
             text-align: center;
             padding: 10px;
@@ -143,6 +143,7 @@
             width: 120px;
             height: 120px;
         }
+
         .video video {
             width: 100%;
         }
@@ -154,36 +155,36 @@
         <div class="header">
             <h1>東南國中 DNJH </h1>
             <h2>2024 915 美術班</h2>
-              <ul>
+            <ul class="links">
                 <li>
                     <h3><a href="https://youtu.be/dQw4w9WgXcQ">首頁</a></h3>
                 </li>
-                    <li class="dropdown">
-                       <h3><a href="#">團體區</a></h3>
-                       <div class="dropdown-content">
-                          <a href="#">1</a>
-                          <a href="#">2</a>
-                          <a href="#">3</a>                        
-                       </div>              
-                    </li>
-                    <li class="dropdown">
-                        <h3><a href="#">專輯區</a></h3>
-                        <div class="dropdown-content">
-                           <a href="#">1</a>
-                           <a href="#">2</a>
-                           <a href="#">3</a>
-                        </div>   
-                    </li>
-                    <li class="dropdown">
-                        <h3><a href="#">個人區</a></h3>
-                        <div class="dropdown-content">
-                           <a href="#">1</a>
-                           <a href="#">2</a>
-                           <a href="#">3</a>                        
-                        </div>   
-                    </li>  
-                </ul>
-           <h3>醫生說你缺鎂該怎麼回?_____Omg</h3>
+                <li class="dropdown">
+                    <h3><a href="#">團體區</a></h3>
+                    <div class="dropdown-content">
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <h3><a href="#">專輯區</a></h3>
+                    <div class="dropdown-content">
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <h3><a href="#">個人區</a></h3>
+                    <div class="dropdown-content">
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                    </div>
+                </li>
+            </ul>
+            <h3>醫生說你缺鎂該怎麼回?_____Omg</h3>
         </div>
         <div class="wrapper">
             <div class="photo">
@@ -213,20 +214,20 @@
             <div class="photo">
                 <img src="./imgs/梗圖 傑瑞嘲諷.jpg">
                 <h3> 我只是忘記傳阿</h3>
-            </div>        
+            </div>
             <div class="video">
                 <video controls>
-                    <source src="./imgs/桃子地鐵跑酷.mp4" type="video/mp4"> 
+                    <source src="./imgs/桃子地鐵跑酷.mp4" type="video/mp4">
                 </video>
                 <h3>桃子地鐵跑酷</h3>
             </div>
-        </div>    
+        </div>
         <div class="footer">
             <h4>結尾</h4>
             <a href="https://youtu.be/OYT3O-nP9TI?list=PLmvbl1CH91JBEWvYZYwdZ-Ffg3YpBUyRi">
                 <img src="./imgs/IG.jpg">
             </a>
-        </div>    
+        </div>
 </body>
 
 </html>
