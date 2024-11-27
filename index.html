@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+
+         .background-coior{
+            color: #e7e4eb;
+         }
+        .hero-img {
+            background-image: url("img/沒有動物.jpg");
+            height: 300px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
         .container {
             display: flex;
             flex-direction: column;
@@ -25,12 +38,12 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: #333;
+            background-color: #081472fa;
         }
 
         li {
             float: left;
-            flex: 1; /*每一個 list item 都擁有一個固定比例1 也就是平分*/
+            flex: 1;
         }
 
         li a {
@@ -42,7 +55,7 @@
         }
 
         li a:hover {
-            background-color: #111;
+            background-color: #000000;
         }
 
         li.dropdown {
@@ -52,7 +65,7 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #f9f9f9;
+            background-color: #E7E4EB;
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
@@ -67,7 +80,7 @@
         }
 
         .dropdown-content a:hover {
-            background-color: #f1f1f1;
+            background-color: #E7E4EB;
         }
 
         .dropdown:hover .dropdown-content {
@@ -87,32 +100,45 @@
         h1 {
             font-family: "Copperplate", Times, fantasy;
             letter-spacing: 6px;
-            color: rgba(10, 45, 151, 0.7);
+            color: rgba(4, 31, 109, 0.7);
             text-align: center;
             letter-spacing: 6px;
-            line-height: 12px;
+            line-height: 20px;
             word-spacing: 2px;
         }
 
         h2 {
-            font-family: "Lucida Console", Times, Monospace;
-            color: rgba(10, 45, 151, 0.694);
+            font-famil: "Georgia", serif ;
+            color: rgb(255, 255, 255);
             text-align: center;
-            letter-spacing: 2px;
-            line-height: 21px;
-            word-spacing: 2px;
+            font-size: 10px;
+        }
         }
 
         h3 {
-            font-family: "Lucida Console", Times, Monospace;
-            color: black;
+            font-famil: "Georgia", serif ;
+            color: rgb(255, 255, 255);
             text-align: center;
+            font-size: 20px;
         }
 
         h4 {
             font-family: "Lucida Console", Times, Monospace;
             color: rgba(255, 255, 255, 0.644);
         }
+
+        h5 {
+           text-align: center;
+           line-height: 20px;
+           font-size: 30px;
+           font-family: fantasy;
+           background-coior: #cbc5d2;
+        }
+
+        .p{
+            color:rgba(4, 31, 109, 0.7);
+        }
+
 
         .wrapper div {
             border: solid 1px;
@@ -134,14 +160,14 @@
 
 
         .footer {
-            background-color: #333;
+            background-color: #081472;
             text-align: center;
             padding: 10px;
         }
 
         .footer img {
-            width: 120px;
-            height: 120px;
+            width: 30px;
+            height: 30px;
         }
 
         .video video {
@@ -153,8 +179,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>東南國中 DNJH </h1>
-            <h2>2024 915 美術班</h2>
+            <div class="hero-img"></div>
             <ul class="links">
                 <li>
                     <h3><a href="https://youtu.be/dQw4w9WgXcQ">首頁</a></h3>
@@ -184,50 +209,18 @@
                     </div>
                 </li>
             </ul>
-            <h3>醫生說你缺鎂該怎麼回?_____Omg</h3>
-        </div>
-        <div class="wrapper">
-            <div class="photo">
-                <img src="./imgs/Happy貓咪gif.gif">
-                <h3> happy貓咪 2024/11/31</h3>
-            </div>
-            <div class="photo">
-                <img src="./imgs/開車貓咪.gif">
-                <h3> 開車貓咪 2024/11/31</h3>
-            </div>
-            <div class="photo">
-                <img src="./imgs/咪咪喵喵.jfif">
-                <h3> 緝盜咪咪喵喵2024/11/31</h3>
-            </div>
-            <div class="photo">
-                <img src="./imgs/喀拉喀拉貓咪.gif">
-                <h3> 吃飯貓咪 2024/11/31</h3>
-            </div>
-            <div class="photo">
-                <img src="./imgs/哭哭貓咪.jpg">
-                <h3>2024/11/31</h3>
-            </div>
-            <div class="photo">
-                <img src="./imgs/HUN貓咪.gif">
-                <h3> 蛤????????????2024/11/31</h3>
-            </div>
-            <div class="photo">
-                <img src="./imgs/梗圖 傑瑞嘲諷.jpg">
-                <h3> 我只是忘記傳阿</h3>
-            </div>
-            <div class="video">
-                <video controls>
-                    <source src="./imgs/桃子地鐵跑酷.mp4" type="video/mp4">
-                </video>
-                <h3>桃子地鐵跑酷</h3>
-            </div>
+            <h5>
+                CLASS 15   ARTIST
+            </h5>
+
         </div>
         <div class="footer">
-            <h4>結尾</h4>
-            <a href="https://youtu.be/OYT3O-nP9TI?list=PLmvbl1CH91JBEWvYZYwdZ-Ffg3YpBUyRi">
-                <img src="./imgs/IG.jpg">
-            </a>
+            <div class="footer img">
+               <a href="https://www.instagram.com/art_815_dn?igsh=dGtmNzB3MTY2Ynph"> <img src="/img/ig.png"></a>
+            </div>
+            <h2>Treasure all encounters and respect all losing.</h2>
         </div>
+        
 </body>
 
 </html>

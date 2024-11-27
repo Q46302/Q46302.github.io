@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <style>
+      html {
+         background: url("img/孤單的側面在岸邊.jpg") no-repeat center fixed;
+         background-size: cover;
+      }
+
+      body {
+         color: white;
+
+      }
+
+      .column.middle {
+         width: 50%;
+      }
+
+      .leftcolumn {
+         float: left;
+         width: 75%;
+      }
+
+      .rightcolumn {
+         float: left;
+         width: 25%;
+         background-color: #f1f1f1;
+         padding-left: 20px;
+      }
+
+      footer {
+         padding: 20px;
+         text-align: center;
+         background: #ddd;
+         margin-top: 20px;
+      }
+
+      .test {
+         width: 200px;
+         height: 46px;
+         position: absolute;
+         animation-name: oxxo;
+         animation-duration: 5s;
+      }
+
+      #img1 {
+         background: rgba(8, 20, 114, 0.98);
+         animation-fill-mode: forwards;
+      }
+
+
+      @keyframes oxxo {
+         0% {
+            left: 0;
+         }
+
+         100% {
+            left: 712px;
+         }
+      }
+
+      .links {
+         display: flex;
+         flex-direction: row;
+         text-align: center;
+      }
+
+      ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+         background-color: rgba(8, 20, 114, 0.98);
+
+         div.sticky {
+            position: sticky;
+            top: 0;
+            padding: 5px;
+         }
+      }
+
+      li {
+         float: left;
+         flex: 1;
+         /*每一個 list item 都擁有一個固定比例1 也就是平分*/
+      }
+
+      li a {
+         display: block;
+         color: white;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+      }
+
+      li a:hover {
+         background-color: #000000;
+      }
+
+      li.dropdown {
+         display: inline-block;
+      }
+
+      .dropdown-content {
+         display: none;
+         position: absolute;
+         background-color: #f9f9f9;
+         min-width: 160px;
+         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+         z-index: 1;
+      }
+
+      .dropdown-content a {
+         color: black;
+         padding: 12px 16px;
+         text-decoration: none;
+         display: block;
+         text-align: left;
+      }
+
+      .dropdown-content a:hover {
+         background-color: #f1f1f1;
+      }
+
+      .dropdown:hover .dropdown-content {
+         display: block;
+      }
+
+      /* .dropbtn {
+      border-bottom: 3px solid red;
+   } */
+
+      /* .dropbtn::after {
+      content: 'v';
+      color: red;
+      padding-left: 5px;
+   } */
+
+
+
+      a {
+         color: black;
+      }
+
+      a:link {
+         text-decoration: none;
+      }
+
+      a:visited {
+         text-decoration: none;
+      }
+
+      a:hover {
+         text-decoration: underline;
+      }
+
+      a:active {
+         text-decoration: underline;
+      }
+
+
+      .head {
+         font-family: Copperlate, Papyrus, fantasy, serif;
+      }
+
+      .topnav {
+         overflow: hidden;
+         background-color: #333;
+      }
+
+      .topnav a {
+         float: left;
+         display: block;
+         color: #f2f2f2;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+      }
+
+      .topnav a:hover {
+         background-color: #ddd;
+         color: black;
+      }
+
+      .fakeimg {
+         background-color: #aaa;
+         width: 100%;
+         padding: 20px;
+      }
+
+      .row::after {
+         content: "";
+         display: table;
+         clear: both;
+      }
+
+      .card {
+         background-color: white;
+         padding: 20px;
+         margin-top: 20px;
+      }
+
+      h1 {
+         font-size: 8vw;
+         text-shadow: 2px 2px 5px rgba(8, 20, 114, 0.98);
+
+      }
+
+      h2 {
+         font-size: 3vw;
+         text-shadow: 2px 2px 5px rgba(8, 20, 114, 0.98);
+
+      }
+      }
+
+      .fixed {
+         position: fixed;
+         top: ;
+         right: ;
+         width: ;
+         height: ;
+         border: ;
+      }
+
+      .container {
+         position: relative;
+      }
+
+      .center {
+         position: absolute;
+         top: 50%;
+         width: 100%;
+         text-align: center;
+         font-size: 18px;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="test" id="img1"></div>
+   <ul class="link">
+      <li class="dropdown">
+         <a class="active" href="">HOME</a>
+      </li>
+      <li class="dropdown">
+         <a class="active" href="#photo">Photo</a>
+         <div class="dropdown-content">
+            <a class="active" href="#">
+            </a>
+         </div>
+      </li>
+   </ul>
+   <div class="container">
+      <div class="center">
+         <div class="head">
+            <h1>W E L C O M E</h1>
+            <h2>This is a website about Adelie Penguins</h2>
+         </div>
+      </div>
+   </div>
+
+</body>
+
+</html>
